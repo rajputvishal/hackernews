@@ -18,9 +18,6 @@ export default function Home(props) {
   }
   return (
     <Layout home>
-      <Head>
-        <title>News</title>
-      </Head>
       <Navbar active="new"/>
 
       <MyPagination start={start} handleChange={handleChange} pages={pages}/>

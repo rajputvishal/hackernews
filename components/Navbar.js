@@ -4,12 +4,14 @@ import {Icon} from 'semantic-ui-react';
 const Navbar = (props) => {
     
     return (
-        <Menu fluid stackable>
+        <Menu className="navigation" fluid stackable>
             <Menu.Item>
-                <Icon  size="large" name='hacker news' />
+                <Link href="/"><a><Icon size="large" name='hacker news' /></a></Link>
             </Menu.Item>
 
-            <Menu.Item header>Hacker News</Menu.Item>
+            <Menu.Item header>
+                <Link href="/"><a>Hacker News</a></Link>
+            </Menu.Item>
 
             <Menu.Item name='new' active={props.active == "new" ? true : false}>
                 <Link href="/"><a>New</a></Link>

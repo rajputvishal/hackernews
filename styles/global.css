@@ -12,11 +12,6 @@ body {
   box-sizing: border-box;
 }
 
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
 a:hover {
   text-decoration: underline;
 }
@@ -32,4 +27,8 @@ img {
 .content {
   width: 80%;
   margin: 0 auto;
+}
+
+.navigation a{
+  color: black;
 }
