@@ -28,3 +28,8 @@ img {
 .justify-center {
     justify-content: center;
 }
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+}

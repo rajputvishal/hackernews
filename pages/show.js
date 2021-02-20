@@ -23,11 +23,13 @@ export default function Home(props) {
       </Head>
       <Navbar active="show"/>
       <MyPagination start={start} handleChange={handleChange} pages={pages}/>
-      <Card.Group className="justify-center">
-       {props.posts.map((post, i) => {
-         return <PostCard key={i} {...post}/>
-       })}
-      </Card.Group>
+      <div className="content">
+        <Card.Group itemsPerRow={4} stackable={true} className="justify-center">
+        {props.posts.map((post, i) => {
+          return <PostCard key={i} {...post}/>
+        })}
+        </Card.Group>
+      </div>
       <MyPagination start={start} handleChange={handleChange} pages={pages}/>
     </Layout>
   )
